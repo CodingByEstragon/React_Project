@@ -1,0 +1,128 @@
+.projectText {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.projectSchedule {
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.calendarControls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn {
+  background-color: #2b2b2f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn:hover {
+  background-color: #3b3b3f;
+}
+
+.pi {
+  font-size: 16px;
+}
+
+.datepicker-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.datepicker-popup {
+  position: absolute;
+}
+
+.week-range-display {
+  font-size: 16px;
+  margin-left: 10px;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.calendarTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  table-layout: fixed;
+  white-space: nowrap;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.cornerCell {
+  background-color: #1f1f23;
+  color: #adadb8;
+  width: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  border-top-left-radius: 12px;
+}
+
+.timeCell {
+  background-color: #2b2b2f;
+  font-weight: bold;
+  width: 80px;
+}
+
+.timeCell.currentHour {
+  background-color: #1f8ef1;
+  color: white;
+}
+
+.dayCell {
+  background-color: #1f1f23;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.slotCell {
+  background-color: #333338;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 40px;
+}
+
+.slotCell:hover {
+  background-color: #55555a;
+}
+
+.slotCell.selected {
+  background-color: #1f8ef1;
+}
+
+.week-range-display {
+  font-size: 16px;
+  margin-left: 10px;
+  white-space: nowrap;
+}

@@ -1,0 +1,197 @@
+/* Sign In headline */
+.headlineSignIn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.loginBody {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    max-width: 430px;
+    min-width: 430px;
+    border-radius: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* font size and font art */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+/* login form width */
+a {
+    margin-right: 40px;
+    font-size:20px;
+    margin-left:40px;
+}
+
+/* login form  */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 430px;
+    min-width: 430px;
+    width: 100%;
+    background:#ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    z-index: 0;
+}
+  
+/* login inner form */
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+    padding: 30px;
+}
+  
+/* Login headline */
+.title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+  
+/* input field for email and password */
+.input-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 310px;  /* 100% */
+    margin-top: 30px;
+}
+
+/* decoration for the input field email, password and Login Now button */
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* click input field email or password you can see the underline color is blue */
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #4070f4;
+}
+  
+/* here you can see the icons */
+.input-field span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+    margin-left: 5px;
+}
+  
+/* checkbox position and login form position */
+.checkbox-textSignin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+/* checkbox color from Remember me */
+.checkbox-contentSignin input {
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+
+/* remember me checkbox */
+.rememberMeSignin {
+    color: #333;
+    font-size: 14px;
+}
+
+/* forgot Password text */
+.forgotPasswordSignin {
+    color: #333;
+    font-size: 14px;
+    color:#4070f4;
+    text-decoration: none;
+}
+
+/* not a member */
+.notMemberSignin {
+    color: #333;
+    font-size: 14px;
+}
+
+/* go to the Signup page when i click the text */
+.signupNow {
+    color: #333;
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+    color:#4070f4;
+    text-decoration: none;
+}
+
+/* underline for forgot password and Signup now */
+.form a:hover {
+    text-decoration: underline;
+}
+  
+/* form is a little bit bigger */
+.button {
+    margin-top: 35px;
+}
+  
+/* decorate the login Now button  */
+.button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+/* when the mouse move to the login Now button change the background color */
+.button input:hover {
+    background-color: #265df2;
+}
+  
+/* this is under the login now button */
+.loginSignup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Information for this page */
+.SigninInformation {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}

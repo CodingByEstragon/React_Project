@@ -1,0 +1,200 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-bottom: 1px solid slategrey;
+  border-radius: 12px;
+  /* padding: 0 20px; */
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imglogo {
+  height: 60px;
+  margin-top: 5px;
+  width: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  /* padding: 8px 12px; */
+  cursor: pointer;
+}
+
+/* 🔥 Cursor auf allen Geräten sichtbar */
+.nav-icon {
+  font-size: 25px;
+  color: black;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  margin-right: -30px;
+  margin-left: 20px;
+}
+
+.nav-iconBag {
+    font-size: 25px;
+  color: black;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  margin: -20px;
+  /* margin-left: -50px;
+  margin-right: 20px; */
+}
+
+.nav-icon-link {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Hamburger Icon */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+/* Rechte Sidebar */
+.search-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0; /* ⬅️ wichtig: kein Abstand nach unten */
+  width: 300px;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  /* padding: 20px; */
+  z-index: 200;
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.close-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-left {
+    display: none; /* Links komplett ausblenden */
+  }
+
+  /* navbar-right sichtbar lassen */
+  .navbar-right {
+    display: flex;
+    /* gap: 15px; */
+    align-items: center;
+    position: relative;
+    z-index: 102; /* sicher über Hamburger */
+  }
+
+  /* Hamburger Icon anzeigen */
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 103; /* über navbar-right */
+  }
+
+  /* Logo mittig */
+  .navbar-center {
+    position: relative;
+    transform: none;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  /* Icons in navbar-right optisch anpassen */
+  .nav-icon {
+    color: black; /* Oder weiß, je nach Hintergrund */
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; /* 👈 hier geändert */
+}
+
+.sidebar-link {
+  margin: 15px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100; /* weniger als sidebar (150), aber über allem anderen */
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 190; /* etwas kleiner als .search-sidebar (200) */
+}
+
+.close-sidebar-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

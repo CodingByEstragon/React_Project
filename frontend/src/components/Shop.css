@@ -1,0 +1,141 @@
+.shop-page {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.sort-button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.sort label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ist das komplette graue Feld*/
+.product-card {
+  background-color: white; /* #f0f0f0; */
+  border-radius: 12px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.product-info {
+  font-size: 0.9rem;
+}
+
+.product-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2b2b2b99;
+  margin-bottom: 0.2rem;
+}
+
+.product-name {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.load-more-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.load-more-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: black;
+  color: white;
+}
